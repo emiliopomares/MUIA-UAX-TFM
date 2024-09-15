@@ -223,20 +223,44 @@ class VoxelNet_v4(nn.Module):
 
         return x
     
-def get_model():
+def strip_model(model):
+    """
+    Strips a PyTorch model of all gradient information and moves it to CPU.
+
+    Args:
+        model (torch.nn.Module): The PyTorch model to be stripped.
+
+    Returns:
+        torch.nn.Module: The stripped model moved to CPU.
+    """
+    # Step 1: Detach the parameters and buffers from the computational graph
+    for param in model.parameters():
+        param.requires_grad = False
+
+    for buffer in model.buffers():
+        buffer.requires_grad = False
+
+    # Step 2: Move the model to CPU (if necessary)
+    model_cpu = model.cpu()
+
+    # Return the stripped model
+    return model_cpu
+
+def get_model(device="cpu"):
     """Gets the final inference model"""
     model = VoxelNet_v4(in_channels=6, out_channels=1, steps=8).to("cpu")
     checkpoint = torch.load(os.path.join(checkpoint_dir, checkpoint_fn))
     # Load the model's state_dict from the checkpoint
     model.load_state_dict(checkpoint['model_state_dict'])
-    return model
+    model = strip_model(model)
+    return model.to(device)
 
 test_dataloader = CustomDataLoader(TEST_DATASET_PATH, additional_param=aug_params)
 test_loader = DataLoader(test_dataloader, batch_size=BATCH_SIZE)
 
-def get_test_batch():
+def get_test_batch(device="cpu"):
     test_batch = None
     for batch in test_loader:
         test_batch = batch
         break
-    return test_batch
+    return [test_batch[0].to(device), test_batch[1].to(device)]

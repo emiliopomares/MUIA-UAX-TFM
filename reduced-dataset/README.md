@@ -1,1 +1,1 @@
-Reduced dataset to be added to the repository, for testing/debug purposes
+Reduced dataset, for testing/debug purposes
