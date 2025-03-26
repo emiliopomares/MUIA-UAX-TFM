@@ -18,10 +18,13 @@ The goal of the model is to predict as **occupied** only the cells which overlap
 The network is a U-Net inspired CNN that processes 2D images in the encoding section, and reconstructs 3D images in the decoding. Residual connections allow information to flow from the encoding layers into the decoding ones.
 ![architecture](media/vxl-net-architecture.jpg)
 
-To train the network, a **synthetic dataset** was generated, plus a careful procedure to estimage **ground truth** from actual stereo images taken with a camera. The overall workflow is shown in this image:
+To train the network, a **synthetic dataset** was generated, plus a careful procedure to **estimate ground truth** from actual stereo images taken with a camera. The overall workflow is shown in this image:
 ![workflow](media/workflow.jpg)
 
-Check out the **demo video** to see the model working in real-time:
+This images shows the input to the model next to predictions and ground truth.
+![predictions-vs-gt](media/predictions-vs-gt.jpg)
+
+The model runs smoothly in real-time in modest GPUS. A demo application is included with the project. Check out the **demo video** to see the model working in real-time:
 
 <a href="https://www.youtube.com/watch?v=Fo1N7kAt3Ng">
   <img src="https://img.youtube.com/vi/Fo1N7kAt3Ng/maxresdefault.jpg" alt="Project demo" width="800">
