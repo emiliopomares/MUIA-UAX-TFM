@@ -24,7 +24,7 @@ To train the network, a **synthetic dataset** was generated, plus a careful proc
 This images shows the input to the model next to predictions and ground truth.
 ![predictions-vs-gt](media/predictions-vs-gt.jpg)
 
-The model runs smoothly in real-time in modest GPUS. A demo application is included with the project. Check out the **demo video** to see the model working in real-time:
+The model runs smoothly in real-time in modest GPUS. A demo application is included with the project. Check out the **demo video** to see the model working in real-time with both **in-distribution** and **out-of-distribution** obstacles:
 
 <a href="https://www.youtube.com/watch?v=Fo1N7kAt3Ng">
   <img src="media/play.jpg" alt="Project demo thumbnail" style="width: 800px;">
