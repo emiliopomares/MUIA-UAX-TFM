@@ -7,3 +7,5 @@ Este repositorio contiene todo el código utilizado en el desarrollo del TFM par
 This repository contains the code for the Final Project of the Master's Degree in Artificial Intelligence from Universidad Alfonso X el Sabio.
 
 https://youtu.be/Fo1N7kAt3Ng
+
+[![Video Preview](https://img.youtube.com/vi/Fo1N7kAt3Ng/maxresdefault.jpg)](https://www.youtube.com/watch?v=Fo1N7kAt3Ng)
