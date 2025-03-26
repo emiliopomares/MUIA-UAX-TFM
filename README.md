@@ -29,3 +29,5 @@ The model runs smoothly in real-time in modest GPUS. A demo application is inclu
 <a href="https://www.youtube.com/watch?v=Fo1N7kAt3Ng">
   <img src="media/play.jpg" alt="Project demo thumbnail" style="width: 800px;">
 </a>
+
+This project was awarded top marks by the Commitee.
