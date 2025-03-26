@@ -26,13 +26,6 @@ This images shows the input to the model next to predictions and ground truth.
 
 The model runs smoothly in real-time in modest GPUS. A demo application is included with the project. Check out the **demo video** to see the model working in real-time:
 
-<div style="position: relative; display: inline-block;">
-  <a href="https://www.youtube.com/watch?v=Fo1N7kAt3Ng">
-    <img src="https://img.youtube.com/vi/Fo1N7kAt3Ng/maxresdefault.jpg" alt="Project demo" style="width: 800px;">
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-      <svg width="100" height="100" viewBox="0 0 24 24" fill="rgba(255, 255, 255, 0.8)">
-        <polygon points="5,3 19,12 5,21" fill="red" />
-      </svg>
-    </div>
-  </a>
-</div>
+<a href="https://www.youtube.com/watch?v=Fo1N7kAt3Ng">
+  <img src="media/play.jpg" alt="Project demo thumbnail" style="width: 800px;">
+</a>
