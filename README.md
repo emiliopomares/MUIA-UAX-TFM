@@ -9,7 +9,7 @@ This repository contains the code for the Final Project of the Master's Degree i
 The goal of the project is to train a CNN-based network to translate a pair of stereo images coming from a stereo camera
 into a voxel-based 3D occupancy grid. Applications range from obstacle navigation to robotic manipulation.
 
-
+![stereo-setup-1](media/stereo-setup-1.jpg)
 
 Check out the demo video to see the model working in real-time:
 
